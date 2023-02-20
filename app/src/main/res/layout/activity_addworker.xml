@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddworkerActivity"
+    android:background="@color/cardview_shadow_start_color">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add Workers"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/worker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter worker name"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/worker_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter worker id"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/worker_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="salary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    <RadioGroup
+        android:id="@+id/home_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="WORKER"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:layout_marginStart="14dp"
+            android:text="LEDAR"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addworker_BTN_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="add"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addworker_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
